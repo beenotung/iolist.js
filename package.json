@@ -1,0 +1,41 @@
+{
+  "name": "iolist.js",
+  "version": "1.0.0",
+  "description": "javascript library from iolist in Erlang",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "lint": "tslint -p .",
+    "format": "tslint -p . --fix",
+    "pretest": "npm run build && npm run lint",
+    "test": "ts-node test/index.ts",
+    "dev": "tslint -p tsconfig-dev.json --fix && npm run test",
+    "prepublishOnly": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/iolist.js.git"
+  },
+  "keywords": [
+    "iolist",
+    "erlang",
+    "javascript",
+    "typescript",
+    "array",
+    "string"
+  ],
+  "author": "Beeno Tung",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/beenotung/iolist.js/issues"
+  },
+  "homepage": "https://github.com/beenotung/iolist.js#readme",
+  "devDependencies": {
+    "@types/node": "^10.5.1",
+    "ts-node": "^7.0.0",
+    "tslint": "^5.10.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "typescript": "^2.9.2"
+  }
+}
