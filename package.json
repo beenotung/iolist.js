@@ -1,6 +1,6 @@
 {
   "name": "iolist.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "javascript library from iolist in Erlang",
   "main": "dist/index.js",
   "scripts": {
