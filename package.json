@@ -1,6 +1,6 @@
 {
   "name": "iolist.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "javascript library from iolist in Erlang",
   "main": "index.js",
   "types": "index.d.ts",
