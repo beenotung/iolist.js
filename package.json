@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "javascript library from iolist in Erlang",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "clean": "rm -f index.*",
     "prebuild": "npm run clean",

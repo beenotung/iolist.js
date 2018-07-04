@@ -5,3 +5,5 @@ tsconfig-dev.json
 tsconfig.json
 tslint.json
 src/
+test/
+.idea/
