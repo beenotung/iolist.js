@@ -2,16 +2,16 @@
   "name": "iolist.js",
   "version": "1.0.1",
   "description": "javascript library from iolist in Erlang",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "prebuild": "rm -rf dist",
+    "clean": "rm -f index.*",
+    "prebuild": "npm run clean",
     "build": "tsc",
     "lint": "tslint -p .",
     "format": "tslint -p . --fix",
-    "pretest": "npm run build && npm run lint",
     "test": "ts-node test/index.ts",
     "dev": "tslint -p tsconfig-dev.json --fix && npm run test",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",

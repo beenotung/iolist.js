@@ -15,7 +15,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "target": "es5",
-    "outDir": "dist"
+    "outDir": "."
   },
   "include": [
     "src/**/*.ts",
